@@ -1,0 +1,38 @@
+query{
+  usuarios{
+    nome,
+    idade,
+    posts{
+      texto
+    },
+    comentarios{
+      texto
+    },
+    reacoes{
+      tipo
+    }
+  }
+}
+
+query{
+  comentarios{
+    texto,
+    user{
+      nome
+    }
+  }
+}
+
+query{
+  posts{
+    texto,
+    comentarios{
+      texto
+    },
+    reacoes{
+      tipo
+    }
+  }
+}
+
+
